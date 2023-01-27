@@ -91,7 +91,7 @@ bullseye.img2      532480 3661823 3129344  1.5G 83 Linux
 * $ `sudo umount /mnt/tmpmnt`
 
 ### 13. Resize the OS image 
-* $ `qemu-img resize bullseye.qcow2 8G` <br>
+* $ `qemu-img resize bullseye.img 8G` <br>
 (You may choose another size, but make sure it's a power of 2 and greater than the initial size)
 
 ### 14. Install qemu-system-arm
@@ -106,7 +106,7 @@ qemu-system-aarch64 \
 	-smp 4 -m 1G \
 	-kernel kernel.img \
 	-dtb treeblob.dtb \
-	-drive "file=bullseye.qcow2,format=qcow2,index=0,if=sd" \
+	-drive "file=bullseye.img,format=img,index=0,if=sd" \
 	-append "rw earlyprintk loglevel=8 console=ttyAMA0,115200 dwc_otg.lpm_enable=0 root=/dev/mmcblk0p2 rootdelay=1" \
 	-device usb-net,netdev=net0 -netdev user,id=net0,hostfwd=tcp::5555-:22 \
 	-nographic
