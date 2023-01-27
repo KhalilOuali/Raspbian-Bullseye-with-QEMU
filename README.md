@@ -84,7 +84,7 @@ bullseye.img2      532480 3661823 3129344  1.5G 83 Linux
 
 ### 11. Create and edit userconf.txt file in the mounted image
 * $ `sudo nano /mnt/tmpmnt/userconf.txt`
-* Type your crendentials in it, following the format `username:encrypted_password` .
+* Type your crendentials in it, following the format `username:encrypted_password`.
 * Press Ctrl+S to save and Ctrl+X to exit.
 
 ### 12. Unmount the OS image
@@ -94,10 +94,7 @@ bullseye.img2      532480 3661823 3129344  1.5G 83 Linux
 * $ `qemu-img resize bullseye.img 8G` <br>
 (You may choose another size, but make sure it's a power of 2 and greater than the initial size)
 
-### 14. Install qemu-system-arm
-* $ `sudo apt install qemu-system-arm`
-
-### 15. Start the VM using the following command
+### 14. Start the VM using the following command
 
 ```
 qemu-system-aarch64 \
@@ -147,7 +144,7 @@ At this point, the VM is set up and usable. However, it is recommended that you 
 
 ### 3. Use raspi-config to configure the system
 * $ `sudo raspi-config` <br>
-(This tool enables you to configure your locale, keyboard layout, hostname, username, password, as well as turn on SSH server, and more)
+(This tool enables you to configure your locale, keyboard layout, hostname, password, as well as turn on SSH server, and more)
 
 ## To access the VM from the host machine using SSH
 * Make sure that you have enabled the SSH server through the raspi-config utility.
