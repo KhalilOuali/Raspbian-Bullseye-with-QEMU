@@ -25,7 +25,7 @@ In theory, it should also work with Bullseye Desktop, but make sure to delete `-
 This guide uses [USB as a network interface for the VM](https://stackoverflow.com/a/64420363/18271103). <br>
 If possible, setting up a bridged connection or a NAT interface would probably be better.
 
-* [There seems to be a bug](https://bugs.launchpad.net/ubuntu/+source/libvirt/+bug/1936831) which makes it impossible to use virt utils to manager this VM.
+* [There seems to be a bug](https://bugs.launchpad.net/ubuntu/+source/libvirt/+bug/1936831) which makes it impossible to use virt utils to manage this VM.
 
 * Some steps in the VM's boot sequence fail, but they do not seem to affect functionality.
 
