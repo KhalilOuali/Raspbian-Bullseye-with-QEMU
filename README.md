@@ -103,7 +103,7 @@ qemu-system-aarch64 \
 	-smp 4 -m 1G \
 	-kernel kernel.img \
 	-dtb treeblob.dtb \
-	-drive "file=bullseye.img,format=img,index=0,if=sd" \
+	-drive "file=bullseye.img,format=raw,index=0,if=sd" \
 	-append "rw earlyprintk loglevel=8 console=ttyAMA0,115200 dwc_otg.lpm_enable=0 root=/dev/mmcblk0p2 rootdelay=1" \
 	-device usb-net,netdev=net0 -netdev user,id=net0,hostfwd=tcp::5555-:22 \
 	-nographic
