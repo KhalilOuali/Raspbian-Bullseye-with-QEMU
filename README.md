@@ -40,7 +40,7 @@ _I honestly do not recommend doing this, but if you insist, good luck._
 * (Or go to the [official download page](https://www.raspberrypi.com/software/operating-systems/).)
 
 ### 3. Extract OS image <br>
-* $ `unxz 2022-09-22-raspios-bullseye-armhf-lite.img`
+* $ `unxz 2022-09-22-raspios-bullseye-armhf-lite.img.xz`
 
 ### 4. (Optional) Rename OS image
 * $ `mv 2022-09-22-raspios-bullseye-armhf-lite.img bullseye.img` <br>
